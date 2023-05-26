@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit An Idea</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="site">
+        <div class="logo">
+            <a href="https://github.com/passivegravity">
+              <img src="srci/Seul.jpg" alt="Logo">
+            </a>
+          </div>
+        <div class="container">
+            <h1 class="submit-heading">Submit an Idea</h1>
+
+            <form onsubmit="event.preventDefault(); sendToDiscord();">
+                <p id="limit-text" style="display: none;">Limit API</p>
+                <div class="form-group">
+
+        <div class="input-container">
+            <input type="text" id="username" class="input-field" placeholder="Username" maxlength="20" required>
+            <span class="char-count"></span>
+          </div>
+          <div class="input-container">
+            <input type="text" id="coding-language" class="input-field" placeholder="Coding Language" maxlength="10" required>
+            <span class="char-count"></span>
+          </div>
+          <div class="input-container">
+            <input type="text" id="idea-description" class="describe-field" placeholder="Describe the idea" maxlength="70" required>
+            <span class="char-count"></span>
+        </div>
+        <div class="submitbtn">
+            <button class="submitbutton">Submit</button>
+          </div>
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>
